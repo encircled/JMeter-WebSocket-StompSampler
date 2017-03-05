@@ -7,6 +7,10 @@ JMeter - WebSocket Stomp Sampler
 
 Compiled binary can be downloaded from the Releases.
 
+## Features
+
+- Cookies support
+
 
 ## Jmeter Dependencies
 You will need following libraries in the JMeter\lib\ext folder:
