@@ -185,13 +185,6 @@ public class ServiceSocket {
         return res;
     }
 
-    /**
-     * @return the session
-     */
-    public Session getSession() {
-        return session;
-    }
-
     public void sendMessage(String message) throws IOException {
         log.debug("** send message ** session id {" + sessionId + "} : " + message);
         log("** send message ** session id {" + sessionId + "} : " + message);
