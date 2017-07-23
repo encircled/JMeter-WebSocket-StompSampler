@@ -4,13 +4,14 @@
  */
 package JMeter.plugins.functional.samplers.websocket;
 
-import java.awt.BorderLayout;
 import org.apache.jmeter.config.Arguments;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.samplers.gui.AbstractSamplerGui;
 import org.apache.jmeter.testelement.TestElement;
 import org.apache.jorphan.logging.LoggingManager;
 import org.apache.log.Logger;
+
+import java.awt.*;
 
 /**
  *
@@ -69,7 +70,7 @@ public class WebSocketSamplerGui extends AbstractSamplerGui {
             webSocketSamplerPanel.setProxyPassword(webSocketSamplerTestElement.getProxyPassword());
             webSocketSamplerPanel.setProxyPort(webSocketSamplerTestElement.getProxyPort());
             webSocketSamplerPanel.setProxyUsername(webSocketSamplerTestElement.getProxyUsername());
-            webSocketSamplerPanel.setMessageBacklog(webSocketSamplerTestElement.getMessageBacklog());
+            webSocketSamplerPanel.setResponsesCount(webSocketSamplerTestElement.getResponsesCount());
 
             Arguments queryStringParameters = webSocketSamplerTestElement.getQueryStringParameters();
             if (queryStringParameters != null) {
@@ -111,7 +112,7 @@ public class WebSocketSamplerGui extends AbstractSamplerGui {
             webSocketSamplerTestElement.setProxyPassword(webSocketSamplerPanel.getProxyPassword());
             webSocketSamplerTestElement.setProxyPort(webSocketSamplerPanel.getProxyPort());
             webSocketSamplerTestElement.setProxyUsername(webSocketSamplerPanel.getProxyUsername());
-            webSocketSamplerTestElement.setMessageBacklog(webSocketSamplerPanel.getMessageBacklog());
+            webSocketSamplerTestElement.setResponsesCount(webSocketSamplerPanel.getResponsesCount());
 
             ArgumentsPanel queryStringParameters = webSocketSamplerPanel.getAttributePanel();
             if (queryStringParameters != null) {

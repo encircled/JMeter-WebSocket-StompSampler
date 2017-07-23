@@ -26,6 +26,43 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 		querystringAttributesPanel.add(attributePanel);
 	}
 
+	private javax.swing.JTextField responsesCountTextField;
+
+	// Variables declaration - do not modify//GEN-BEGIN:variables
+	private javax.swing.JTextField closeConncectionPatternTextField;
+	private javax.swing.JTextField connectionIdTextField;
+	private javax.swing.JTextField connectionTimeoutTextField;
+	private javax.swing.JTextField contentEncodingTextField;
+	private javax.swing.JTextField contextPathTextField;
+	private javax.swing.JCheckBox ignoreSslErrorsCheckBox;
+	private javax.swing.JComboBox implementationComboBox;
+	private javax.swing.JLabel jLabel1;
+	private javax.swing.JLabel jLabel10;
+	private javax.swing.JLabel jLabel11;
+	private javax.swing.JLabel jLabel12;
+	private javax.swing.JLabel jLabel13;
+	private javax.swing.JLabel jLabel14;
+	private javax.swing.JLabel jLabel15;
+	private javax.swing.JLabel jLabel16;
+	private javax.swing.JLabel jLabel17;
+	private javax.swing.JLabel jLabel18;
+	private javax.swing.JLabel jLabel19;
+	private javax.swing.JLabel jLabel2;
+	private javax.swing.JLabel jLabel3;
+	private javax.swing.JLabel jLabel4;
+	private javax.swing.JLabel jLabel5;
+	private javax.swing.JLabel jLabel6;
+	private javax.swing.JLabel jLabel7;
+	private javax.swing.JLabel jLabel8;
+	private javax.swing.JLabel jLabel9;
+	private javax.swing.JPanel jPanel1;
+	private javax.swing.JPanel jPanel2;
+	private javax.swing.JPanel jPanel3;
+	private javax.swing.JPanel jPanel5;
+	private javax.swing.JPanel jPanel6;
+	private javax.swing.JScrollPane jScrollPane1;
+	private javax.swing.JScrollPane jScrollPane2;
+
 	/**
 	 * This method is called from within the constructor to initialize the form.
 	 * WARNING: Do NOT modify this code. The content of this method is always
@@ -74,7 +111,7 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 		jLabel9 = new javax.swing.JLabel();
 		closeConncectionPatternTextField = new javax.swing.JTextField();
 		jLabel16 = new javax.swing.JLabel();
-		messageBacklogTextField = new javax.swing.JTextField();
+		responsesCountTextField = new javax.swing.JTextField();
 		jPanel6 = new javax.swing.JPanel();
 		jLabel10 = new javax.swing.JLabel();
 		proxyAddressTextField = new javax.swing.JTextField();
@@ -265,7 +302,7 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 
 		jLabel9.setText("Close connection pattern:");
 
-		jLabel16.setText("Message backlog:");
+		jLabel16.setText("Expected responses count:");
 
 		javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
 		jPanel5.setLayout(jPanel5Layout);
@@ -281,7 +318,7 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 												.addGap(18, 18, 18)
 												.addComponent(jLabel16)
 												.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-												.addComponent(messageBacklogTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+												.addComponent(responsesCountTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
 										.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
 												.addComponent(jLabel19)
 												.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -299,7 +336,7 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 								.addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 										.addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
 												.addComponent(jLabel16)
-												.addComponent(messageBacklogTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+												.addComponent(responsesCountTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 										.addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
 												.addComponent(jLabel7)
 												.addComponent(connectPatternTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -406,42 +443,6 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 								.addContainerGap())
 		);
 	}// </editor-fold>//GEN-END:initComponents
-
-	// Variables declaration - do not modify//GEN-BEGIN:variables
-	private javax.swing.JTextField closeConncectionPatternTextField;
-	private javax.swing.JTextField connectionIdTextField;
-	private javax.swing.JTextField connectionTimeoutTextField;
-	private javax.swing.JTextField contentEncodingTextField;
-	private javax.swing.JTextField contextPathTextField;
-	private javax.swing.JCheckBox ignoreSslErrorsCheckBox;
-	private javax.swing.JComboBox implementationComboBox;
-	private javax.swing.JLabel jLabel1;
-	private javax.swing.JLabel jLabel10;
-	private javax.swing.JLabel jLabel11;
-	private javax.swing.JLabel jLabel12;
-	private javax.swing.JLabel jLabel13;
-	private javax.swing.JLabel jLabel14;
-	private javax.swing.JLabel jLabel15;
-	private javax.swing.JLabel jLabel16;
-	private javax.swing.JLabel jLabel17;
-	private javax.swing.JLabel jLabel18;
-	private javax.swing.JLabel jLabel19;
-	private javax.swing.JLabel jLabel2;
-	private javax.swing.JLabel jLabel3;
-	private javax.swing.JLabel jLabel4;
-	private javax.swing.JLabel jLabel5;
-	private javax.swing.JLabel jLabel6;
-	private javax.swing.JLabel jLabel7;
-	private javax.swing.JLabel jLabel8;
-	private javax.swing.JLabel jLabel9;
-	private javax.swing.JPanel jPanel1;
-	private javax.swing.JPanel jPanel2;
-	private javax.swing.JPanel jPanel3;
-	private javax.swing.JPanel jPanel5;
-	private javax.swing.JPanel jPanel6;
-	private javax.swing.JScrollPane jScrollPane1;
-	private javax.swing.JScrollPane jScrollPane2;
-	private javax.swing.JTextField messageBacklogTextField;
 	private javax.swing.JTextField protocolTextField;
 	private javax.swing.JTextField proxyAddressTextField;
 	private javax.swing.JTextField proxyPasswordTextField;
@@ -630,12 +631,12 @@ public class WebSocketSamplerPanel extends javax.swing.JPanel {
 		return (String) implementationComboBox.getSelectedItem();
 	}
 
-	public void setMessageBacklog(String messageBacklog) {
-		messageBacklogTextField.setText(messageBacklog);
+	public String getResponsesCount() {
+		return responsesCountTextField.getText();
 	}
 
-	public String getMessageBacklog() {
-		return messageBacklogTextField.getText();
+	public void setResponsesCount(String responsesCount) {
+		responsesCountTextField.setText(responsesCount);
 	}
 
 	/**
